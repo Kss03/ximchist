@@ -1,0 +1,11 @@
+.advantages-section .benefits{
+  max-width: 1200px;
+}
+.advantages-section .benefit img {
+  width: calc(var(--index) * 3);
+  height: calc(var(--index) * 3);
+}
+.advantages-section .benefit p {
+  text-align: center;
+  font-size: 20px;
+}

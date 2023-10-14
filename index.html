@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanComfort 03</title>
+
+  <meta name="description" content="Химчистка мягкой мебели от профессионалов. Закажите выезд мастера на дом или офис. Быстро, качественно и недорого. Гарантия на все виды работ. Оставьте заявку на сайте и получите скидку 10%.">
+
+  <!-- favicons  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/hero-section.css">
+  <link rel="stylesheet" href="./css/advantages-section.css">
+  <link rel="stylesheet" href="./css/material-section.css">
+  <link rel="stylesheet" href="./css/price-section.css">
+  <link rel="stylesheet" href="./css/questions-section.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  
+</head>
+<body>
+  <header class="header">
+    <div class="header__desktop">
+      <div class="header__top">
+        <div class="container">
+          <div class="d-flex justify-content-between py-2">
+            <div class="">
+              <a href="#" class="h4 me-lg-2 me-xl-2">
+                <i class="fa-brands fa-instagram" style="color: inherit;"></i>
+              </a>
+              <a href="#" class="h4 me-lg-2 me-xl-2">
+                <i class="fa-brands fa-telegram" style="color: inherit;"></i>
+              </a>
+              <a href="#" class="h4">
+                <i class="fa-brands fa-viber" style="color: inherit;"></i>
+              </a>
+            </div>
+            <div>
+              <a href="tel:+79834377463" class="me-lg-2 me-xl-4">
+                <i class="fa-solid fa-phone" style="color: inherit;"></i>
+                +7(983)437-74-63
+              </a>
+              <a href="mailto:dan@dan.ru">
+                <i class="fa-solid fa-envelope" style="color: inherit;"></i>
+                cleancomfort@yandex.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__main my-lg-2 my-xl-2">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="header__logo d-flex me-auto">
+              <img src="./img/logo-header.png" alt="Clean Comfort 03" class="img img-fluid">
+            </div>
+  
+            <nav class="header__nav nav me-lg-5">
+              <ul class="nav__list list-unstyled d-flex align-items-center mb-0">
+                <li class="nav__item me-lg-3 me-xl-4">
+                  <a href="#">Примеры работ</a>
+                </li>
+                <li class="nav__item me-lg-3 me-xl-4">
+                  <a href="#">Цены</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+            <span class="me-2">
+              <i class="fa-solid fa-location-dot me-1" style="color: inherit;"></i>
+              г.Улан-Удэ, Улица Цыбикова 3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__mobile">
+      <div class="container">
+        <div class="mobile__nav py-2">
+          <div class="row">
+            <div class="col">
+              <div class="header__logo d-flex me-auto justify-content-start align-items-center h-100">
+                <img src="./img/logo-header.png" alt="Clean Comfort 03" class="img img-fluid">
+              </div>
+    
+            </div>
+            <div class="col">
+              <div class="header__burger align-items-center justify-content-end h-100 d-flex ">
+                <a href="mailto:dan@dan.ru" class="btn border-0 p-0 me-4">
+                  <i class="fa-solid fa-envelope fa-xl" style="color: var(--turquose-400);"></i>
+                </a>
+                <a href="tel:+79834377463" class="btn border-0 p-0 me-4">
+                  <i class="fa-solid fa-phone fa-xl" style="color: var(--turquose-400);"></i>
+                </a>
+                <button 
+                  type="button" 
+                  class="btn p-0" 
+                  data-bs-toggle="offcanvas" 
+                  data-bs-target="#mobile-burger-menu" 
+                  aria-controls="mobile-burger-menu">
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-burger-menu" aria-labelledby="mobile-burger-menuLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="mobile-burger-menuLabel">
+                <span class="me-2 fs-6">
+                  <i class="fa-solid fa-location-dot me-1" style="color: inherit;"></i>
+                  г.Улан-Удэ, Улица Цыбикова 3
+                </span>
+              </h5>
+              <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark fa-2xl"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <nav class="header__nav nav me-lg-5 w-100">
+                <ul class="nav__list list-unstyled d-flex align-items-start flex-column mb-0 fs-4 text-dark w-100">
+                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                    <a class="text-dark" href="#">Примеры работ</a>
+                  </li>
+                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                    <a class="text-dark" href="#">Цены</a>
+                  </li>
+
+                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                    <a href="tel:+79834377463" class="me-lg-2 me-xl-4 text-dark">
+                      <i class="fa-solid fa-phone" style="color: inherit;"></i>
+                      +7(983)437-74-63
+                    </a>
+                  </li>
+                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                    <a href="mailto:dan@dan.ru" class="me-lg-2 me-xl-4 text-dark">
+                      <i class="fa-solid fa-envelope" style="color: inherit;"></i>
+                      cleancomfort@yandex.ru
+                    </a>
+                  </li>
+                  <li class="nav__item mb-3 pb-3 w-100 ps-4">
+                    <div class="text-end">
+                      <a href="#" class="h4 me-3 me-lg-2 me-xl-2">
+                        <i class="fa-brands fa-instagram fa-xl" style="color: inherit;"></i>
+                      </a>
+                      <a href="#" class="h4 me-3 me-lg-2 me-xl-2">
+                        <i class="fa-brands fa-telegram fa-xl" style="color: inherit;"></i>
+                      </a>
+                      <a href="#" class="h4">
+                        <i class="fa-brands fa-viber fa-xl" style="color: inherit;"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-section mx-auto mb-lg-5 mb-3">
+      <!-- Swiper -->
+      <div class="swiper hero-swiper h-100 mb-lg-5">
+        <div class="swiper-wrapper align-items-stretch h-100">
+          <div class="swiper-slide d-flex flex-column justify-content-center align-items-center h-100">
+            <h1 class="mb-5 mb-lg-5 lh-sm px-3 px-lg-0 text-center">
+              Химчистка мягкой мебели
+            </h1>
+            <img src="./img/hero-slide-1.jpg" alt="img" class="z-n1">
+            <div class="shadow z-n1"></div>
+            <button class="btn border-0 px-lg-5 py-lg-3">Связаться с нами</button>
+          </div>
+          <div class="swiper-slide d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="row container">
+              <div class="col-lg-8">
+                <h1 class="lh-1 mb-4">
+                  Химчистка диванов
+                </h1>
+                <p class="mb-lg-5 lh-base">
+                  Удаляем пятна и&nbsp;выводим запахи с&nbsp;двойной гарантией!
+                </p>
+                <button class="btn border-0 px-lg-5 py-lg-3">Связаться с нами</button>
+              </div>
+              <div class="col"></div>
+            </div>
+            <img src="./img/hero-slide-2.jpg" alt="img" class="z-n1">
+            <div class="shadow z-n1"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="advantages-section">
+      <div class="container">
+        <div class="row row-cols-2 row-cols-lg-4 benefits mx-auto">
+          <div class="col">
+            <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
+              <img src="./img/hero-icon1.svg" alt="" class="mb-3">
+              <p>
+                Экологичные чистящие средства
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
+              <img src="./img/hero-icon2.svg" alt="" class="mb-3">
+              <p>
+                Удаляем любые загрязнения и пятна
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
+              <img src="./img/hero-icon3.svg" alt="" class="mb-3">
+              <p>
+                Большой опыт работы
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
+              <img src="./img/hero-icon4.svg" alt="" class="mb-3">
+              <p>
+                Гарантия чистоты и сохранности
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="material-section section">
+      <div class="container">
+        <p class="text-center fw-light fs-5">
+          Компания &laquo;Эко-чистка&raquo; предлагает услуги химчистки мягкой мебели с&nbsp;выездом на&nbsp;дом в&nbsp;Москве и&nbsp;Московской области. Наши специалисты оперативно и&nbsp;качественно помогут вам избавиться от&nbsp;загрязнений на&nbsp;обивке мебели самого различного происхождения. Все работы проводятся прямо у&nbsp;заказчика с&nbsp;помощью профессионального оборудования Karcher и&nbsp;профессиональных моющих средств. Мы&nbsp;гарантируем высокое качество услуг по&nbsp;чистке диванов, кресел, пуфиков и&nbsp;другой мягкой мебели с&nbsp;любыми видами обивочных тканей.
+        </p>
+      </div>
+    </div>
+
+    <div class="section material-section">
+      <div class="container">
+        <h2 class="text-center mb-5 mb-lg-5 h1 fw-bold">
+          Какие материалы чистим
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 gx-xxl-2 gx-lg-0 gy-4 gy-lg-5">
+
+          <div class="col">
+            <div class="material-section__card d-flex flex-nowrap">
+              <div class="material-section__img me-4">
+                <img src="./img/material-examples/bg-material-synthetic.jpg" alt="">
+                <div class="img-mask">
+                </div>
+              </div>
+              <div class="material-section__content">
+                <h5 class="fs-5 fw-normal mb-1">
+                  Синтетика
+                </h5>
+                <ul class="mb-1">
+                  <li class="mb-0">
+                    Капрон
+                  </li>
+                  <li class="mb-0">
+                    Велюр
+                  </li>
+                  <li class="mb-0">
+                    Спандекс
+                  </li>
+                  <li class="mb-0">
+                    Лайкра
+                  </li>
+                </ul>
+                <p class="fs-5 mb-0">от <span class="h4">150 </span>руб.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="material-section__card d-flex flex-nowrap">
+              <div class="material-section__img me-4">
+                <img src="./img/material-examples/bg-material-antivandal.jpg" alt="">
+                <div class="img-mask">
+                </div>
+              </div>
+              <div class="material-section__content">
+                <h5 class="fs-5 fw-normal mb-1">
+                  Антивандальные
+                </h5>
+                <ul class="mb-1">
+                  <li class="mb-0">
+                    Флок
+                  </li>
+                  <li class="mb-0">
+                    Рогожка
+                  </li>
+                  <li class="mb-0">
+                    Релакс
+                  </li>
+                </ul>
+                <p class="fs-5 mb-0">от <span class="h4">200 </span>руб.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="material-section__card d-flex flex-nowrap">
+              <div class="material-section__img me-4">
+                <img src="./img/material-examples/bg-material-delicate.jpg" alt="">
+                <div class="img-mask">
+                </div>
+              </div>
+              <div class="material-section__content">
+                <h5 class="fs-5 fw-normal mb-1">
+                  Деликатные
+                </h5>
+                <ul class="mb-1">
+                  <li class="mb-0">
+                    Гобелен
+                  </li>
+                  <li class="mb-0">
+                    Шелк
+                  </li>
+                  <li class="mb-0">
+                    Лен
+                  </li>
+                  <li class="mb-0">
+                    Парча
+                  </li>
+                </ul>
+                <p class="fs-5 mb-0">от <span class="h4">300 </span>руб.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="material-section__card d-flex flex-nowrap">
+              <div class="material-section__img me-4">
+                <img src="./img/material-examples/bg-material-leather.jpg" alt="">
+                <div class="img-mask">
+                </div>
+              </div>
+              <div class="material-section__content">
+                <h5 class="fs-5 fw-normal mb-1">
+                  Кожа
+                </h5>
+                <p class="fs-5 mb-0">от <span class="h4">800 </span>руб.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section price-section">
+      <div class="container">
+        <h2 class="text-center mb-5 mb-lg-5 h1 fw-bold">
+          Цены на&nbsp;химчистку диванов и&nbsp;мягкой мебели
+        </h2>
+
+        <div class="d-flex justify-content-center align-items-center mb-5">
+          <ul class="price-nav nav nav-underline mb-lg-5">
+            <li class="nav-item">
+              <button 
+                value="sofa" 
+                class=" fs-4 nav-link text-dark active px-lg-5 me-3" 
+                onclick="showCurrent(this)">
+                  Диваны
+                </button>
+            </li>
+            <li class="nav-item">
+              <button 
+                value="mattress" 
+                class=" fs-4 nav-link text-dark px-lg-5" 
+                onclick="showCurrent(this)">
+                  Матрасы
+                </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price-items-block">
+          <div id="sofa" class="price-items row row-cols-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/divan 1500r 2 POSADOCHNYH MESTA.svg" alt="icon" class="img img-fluid mb-3">
+
+                <h5 class="h5 text-center">
+                  Диван
+                </h5>
+                <p class="text-center mb-1">
+                  2&nbsp;посадочных (100-120&nbsp;см)
+                </p>
+                <p class="text-center fs-4">
+                  1000 рублей
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div id="mattress" class="price-items row row-cols-2 row-cols-md-3 row-cols-lg-4 d-none">
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/mattress/matras detsky 60x120 1 storona 600r.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Матрас детский
+                </h5>
+                <p class="text-center mb-1">
+                  60&times;120&nbsp;см (с&nbsp;одной стороны)
+                </p>
+                <p class="text-center fs-4">
+                  600 рублей
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section questions-section">
+      <div class="container">
+        <h2 class="text-center mb-5 mb-lg-5 h1 fw-bold">
+          Часто задаваемые вопросы
+        </h2>
+        <div class="accordion accordion-flush bg-danger" id="accordionQuestionSectionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionSection-collapseOne" aria-expanded="false" aria-controls="questionSection-collapseOne">
+                Когда приедет мастер?
+              </button>
+            </h2>
+            <div id="questionSection-collapseOne" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Когда вы&nbsp;сами этого захотите. В&nbsp;общении с&nbsp;менеджером вы&nbsp;озвучиваете подходящие вам день и&nbsp;время приезда мастера. При необходимости вы&nbsp;можете заказать срочный выезд уже в&nbsp;день обращения.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionSection-collapseTwo" aria-expanded="false" aria-controls="questionSection-collapseTwo">
+                Сколько времени займет чистка матраса?
+              </button>
+            </h2>
+            <div id="questionSection-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Среднее время чистки одного двуспального матраса с&nbsp;двух сторон составляет порядка 1&nbsp;часа.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionSection-collapseThree" aria-expanded="false" aria-controls="questionSection-collapseThree">
+                Безопасно ли проводить химчистку дома и безопасен ли после нее матрас?
+              </button>
+            </h2>
+            <div id="questionSection-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Да. Проведение химчистки на&nbsp;дому&nbsp;&mdash; безопасная процедура. Применяемые средства не&nbsp;аллергенны, безвредны для человека и&nbsp;животных. Они полностью смываются водой, поэтому после чистки матрас также совершенно безопасен для использования.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3">
+        <div class="col">
+          <div class="footer__logo d-flex w-100 mb-3 mb-lg-0">
+            <img src="./img/logo-header.png" alt="Clean Comfort 03" class="img img-fluid" style="width: 250px;">
+          </div>
+
+        </div>
+
+        <div class="col">
+          <nav class="footer__nav nav me-lg-5">
+            <ul class="nav__list list-unstyled d-flex flex-column align-items-start mb-0">
+              <li class="nav__item me-lg-3 me-xl-4">
+                <a href="#">Примеры работ</a>
+              </li>
+              <li class="nav__item me-lg-3 me-xl-4">
+                <a href="#">Цены</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col">
+          <div class="d-flex flex-column">
+            <a href="tel:+79834377463" class=" mb-2">
+              <i class="fa-solid fa-phone" style="color: inherit;"></i>
+              +7(983)437-74-63
+            </a>
+            <a href="mailto:dan@dan.ru" class="mb-2">
+              <i class="fa-solid fa-envelope" style="color: inherit;"></i>
+              cleancomfort@yandex.ru
+            </a>
+          </div>
+
+          <div class="">
+            <a href="#" class="h4 me-lg-2 me-xl-2 me-2">
+              <i class="fa-brands fa-instagram fa-xl" style="color: inherit;"></i>
+            </a>
+            <a href="#" class="h4 me-lg-2 me-xl-2 me-2">
+              <i class="fa-brands fa-telegram fa-xl" style="color: inherit;"></i>
+            </a>
+            <a href="#" class="h4">
+              <i class="fa-brands fa-viber fa-xl" style="color: inherit;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font awesome icons -->
+  <script src="https://kit.fontawesome.com/55f18192c2.js" crossorigin="anonymous"></script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".hero-swiper", {
+      loop: true,
+      height: 450,
+      autoplay: {
+        delay: 5000,
+      },
+      speed: 1000,
+    });
+  </script>
+
+  <!-- nav price -->
+  <script>
+
+    const showCurrent = (e) => {
+      const priceSection = document.querySelector('.price-section');
+      const navButtons = priceSection.querySelectorAll('.nav-link');
+      const navItems = priceSection.querySelectorAll('.price-items');
+
+      navButtons.forEach((button) => {
+        if (button.value == e.value) {
+          button.classList.add('active')
+        } else {
+          button.classList.remove('active');
+        }
+      })
+
+      navItems.forEach((elem) => {
+        if (elem.id == e.value) {
+          elem.classList.add('d-block')
+          elem.classList.remove('d-none');
+        } 
+        else {
+          elem.classList.add('d-none');
+          elem.classList.remove('d-block');
+        }
+      })
+
+    }
+
+  </script>
+</body>
+</html>
