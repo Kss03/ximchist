@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="./css/price-section.css">
   <link rel="stylesheet" href="./css/questions-section.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/contact-modal-section.css">
 
   
 </head>
@@ -39,7 +40,7 @@
         <div class="container">
           <div class="d-flex justify-content-between py-2">
             <div class="">
-              <a href="#" class="h4 me-lg-2 me-xl-2">
+              <a href="https://instagram.com/pro_clean03?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" class="h4 me-lg-2 me-xl-2">
                 <i class="fa-brands fa-instagram" style="color: inherit;"></i>
               </a>
               <a href="#" class="h4 me-lg-2 me-xl-2">
@@ -50,9 +51,9 @@
               </a>
             </div>
             <div>
-              <a href="tel:+79834377463" class="me-lg-2 me-xl-4">
+              <a href="tel:+79834380400" class="me-lg-2 me-xl-4">
                 <i class="fa-solid fa-phone" style="color: inherit;"></i>
-                +7(983)437-74-63
+                +7(983)438-04-00
               </a>
               <a href="mailto:dan@dan.ru">
                 <i class="fa-solid fa-envelope" style="color: inherit;"></i>
@@ -72,20 +73,20 @@
             <nav class="header__nav nav me-lg-5">
               <ul class="nav__list list-unstyled d-flex align-items-center mb-0">
                 <li class="nav__item me-lg-3 me-xl-4">
-                  <a href="#">Примеры работ</a>
+                  <a href="#material-examples">Примеры работ</a>
                 </li>
                 <li class="nav__item me-lg-3 me-xl-4">
-                  <a href="#">Цены</a>
+                  <a href="#service-price">Цены</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#">Контакты</a>
+                  <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Контакты</a>
                 </li>
               </ul>
             </nav>
   
             <span class="me-2">
               <i class="fa-solid fa-location-dot me-1" style="color: inherit;"></i>
-              г.Улан-Удэ, Улица Цыбикова 3
+              г.Улан-Удэ
             </span>
           </div>
         </div>
@@ -127,7 +128,7 @@
               <h5 class="offcanvas-title" id="mobile-burger-menuLabel">
                 <span class="me-2 fs-6">
                   <i class="fa-solid fa-location-dot me-1" style="color: inherit;"></i>
-                  г.Улан-Удэ, Улица Цыбикова 3
+                  г.Улан-Удэ
                 </span>
               </h5>
               <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -145,9 +146,9 @@
                   </li>
 
                   <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
-                    <a href="tel:+79834377463" class="me-lg-2 me-xl-4 text-dark">
+                    <a href="tel:+79834380400" class="me-lg-2 me-xl-4 text-dark">
                       <i class="fa-solid fa-phone" style="color: inherit;"></i>
-                      +7(983)437-74-63
+                      +7(983)438-04-00
                     </a>
                   </li>
                   <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
@@ -181,6 +182,63 @@
   </header>
 
   <main>
+
+    <div class="contact-modal-section">
+      <!-- Contact Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-0 pb-0">
+            <div class="modal-header px-4 rounded-0">
+              <h1 class="modal-title fw-medium w-100" id="exampleModalLabel">Вызвать мастера</h1>
+            </div>
+            <div class="modal-body px-4 px-lg-5 py-4 py-lg-5">
+              <p class="fs-5 lh-base fw-light">
+                Вы можете связаться с нами по номеру телефона:
+              </p>
+              <div class=" row row-cols-1 justify-content-center ps-4 mb-3">
+                <div class="col">
+                  <a href="tel:+79834380400" class=" h4 text-dark fs-5 d-inline-block mb-3">
+                    <i class="fa-solid fa-phone" style="color: inherit;"></i>
+                    +7(983)438-04-00
+                  </a>
+                </div>
+              </div>
+              <p class="fs-5 lh-base fw-light">Или в удобных для Вас мессенджерах:</p>
+              <div class="row row-cols-2 justify-content-around px-4 gy-3">
+                <div class="col">
+                  <a href="#" class="h4 fs-6">
+                    <i class="fa-brands fa-instagram fa-xl" style="color: inherit;"></i>
+                    Instagram
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="h4 fs-6">
+                    <i class="fa-brands fa-telegram fa-xl" style="color: inherit;"></i>
+                    Telegram
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="h4 fs-6">
+                    <i class="fa-brands fa-whatsapp fa-xl" style="color: inherit;"></i>
+                    Whatsapp
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="h4 fs-6">
+                    <i class="fa-brands fa-viber fa-xl" style="color: inherit;"></i>
+                    Viber
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+            <div class="modal-footer py-4 py-lg-4 rounded-0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="hero-section mx-auto mb-lg-5 mb-3">
       <!-- Swiper -->
       <div class="swiper hero-swiper h-100 mb-lg-5">
@@ -189,11 +247,12 @@
             <h1 class="mb-5 mb-lg-5 lh-sm px-3 px-lg-0 text-center">
               Химчистка мягкой мебели
             </h1>
-            <img src="./img/hero-slide-1.jpg" alt="img" class="z-n1">
+            <div class="bg-image z-n1"></div>
+            <!-- <img src="./img/banner.webp" alt="img" class="z-n1"> -->
             <div class="shadow z-n1"></div>
-            <button class="btn border-0 px-lg-5 py-lg-3">Связаться с нами</button>
+            <button class="btn border-0 px-lg-5 py-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Связаться с нами</button>
           </div>
-          <div class="swiper-slide d-flex flex-column justify-content-center align-items-center h-100">
+          <!-- <div class="swiper-slide d-flex flex-column justify-content-center align-items-center h-100">
             <div class="row container">
               <div class="col-lg-8">
                 <h1 class="lh-1 mb-4">
@@ -208,7 +267,7 @@
             </div>
             <img src="./img/hero-slide-2.jpg" alt="img" class="z-n1">
             <div class="shadow z-n1"></div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -216,36 +275,44 @@
 
     <div class="advantages-section">
       <div class="container">
-        <div class="row row-cols-2 row-cols-lg-4 benefits mx-auto">
+        <div class="row row-cols-2 row-cols-lg-5 benefits mx-auto justify-content-center">
           <div class="col">
             <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
               <img src="./img/hero-icon1.svg" alt="" class="mb-3">
-              <p>
-                Экологичные чистящие средства
+              <p class="fs-6">
+                Сертифицированные биоразлагаемые средства от&nbsp;мировых лидеров индустрии.
               </p>
             </div>
           </div>
           <div class="col">
             <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
               <img src="./img/hero-icon2.svg" alt="" class="mb-3">
-              <p>
-                Удаляем любые загрязнения и пятна
+              <p class="fs-6">
+                Удаляем большую часть сложновыводимых пятен и&nbsp;загрязнений.
               </p>
             </div>
           </div>
           <div class="col">
             <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
               <img src="./img/hero-icon3.svg" alt="" class="mb-3">
-              <p>
-                Большой опыт работы
+              <p class="fs-6">
+                Выезд возможен 24&nbsp;часа в&nbsp;сутки. Работы в&nbsp;ночное время только по&nbsp;предварительной записи.
               </p>
             </div>
           </div>
           <div class="col">
             <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
               <img src="./img/hero-icon4.svg" alt="" class="mb-3">
-              <p>
-                Гарантия чистоты и сохранности
+              <p class="fs-6">
+                Гарантия сохранности обивки и&nbsp;отсутствия разводов от&nbsp;химии. Пятна не&nbsp;появятся снова после чистки!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column benefit justify-content-center align-items-center py-4">
+              <img src="./img/portmone.png" alt="" class="mb-3">
+              <p class="fs-6">
+                Гарантия сохранности обивки и&nbsp;отсутствия разводов от&nbsp;химии. Пятна не&nbsp;появятся снова после чистки!
               </p>
             </div>
           </div>
@@ -253,15 +320,15 @@
       </div>
     </div>
 
-    <div class="material-section section">
+    <div class="text-section section">
       <div class="container">
         <p class="text-center fw-light fs-5">
-          Компания &laquo;Эко-чистка&raquo; предлагает услуги химчистки мягкой мебели с&nbsp;выездом на&nbsp;дом в&nbsp;Москве и&nbsp;Московской области. Наши специалисты оперативно и&nbsp;качественно помогут вам избавиться от&nbsp;загрязнений на&nbsp;обивке мебели самого различного происхождения. Все работы проводятся прямо у&nbsp;заказчика с&nbsp;помощью профессионального оборудования Karcher и&nbsp;профессиональных моющих средств. Мы&nbsp;гарантируем высокое качество услуг по&nbsp;чистке диванов, кресел, пуфиков и&nbsp;другой мягкой мебели с&nbsp;любыми видами обивочных тканей.
+          Компания &laquo;Clean Comfort 03&raquo; предлагает услуги химчистки мягкой мебели с&nbsp;выездом на&nbsp;дом в&nbsp;Москве и&nbsp;Московской области. Наши специалисты оперативно и&nbsp;качественно помогут вам избавиться от&nbsp;загрязнений на&nbsp;обивке мебели самого различного происхождения. Все работы проводятся прямо у&nbsp;заказчика с&nbsp;помощью профессионального оборудования Karcher и&nbsp;профессиональных моющих средств. Мы&nbsp;гарантируем высокое качество услуг по&nbsp;чистке диванов, кресел, пуфиков и&nbsp;другой мягкой мебели с&nbsp;любыми видами обивочных тканей.
         </p>
       </div>
     </div>
 
-    <div class="section material-section">
+    <div class="section material-section" id="material-examples">
       <div class="container">
         <h2 class="text-center mb-5 mb-lg-5 h1 fw-bold">
           Какие материалы чистим
@@ -373,10 +440,10 @@
       </div>
     </div>
 
-    <div class="section price-section">
+    <div class="section price-section" id="service-price">
       <div class="container">
         <h2 class="text-center mb-5 mb-lg-5 h1 fw-bold">
-          Цены на&nbsp;химчистку диванов и&nbsp;мягкой мебели
+          Цены на&nbsp;химчистку мягкой мебели и&nbsp;мягкой мебели
         </h2>
 
         <div class="d-flex justify-content-center align-items-center mb-5">
@@ -386,7 +453,7 @@
                 value="sofa" 
                 class=" fs-4 nav-link text-dark active px-lg-5 me-3" 
                 onclick="showCurrent(this)">
-                  Диваны
+                  Мягкая мебель
                 </button>
             </li>
             <li class="nav-item">
@@ -402,24 +469,194 @@
 
         <div class="price-items-block">
           <div id="sofa" class="price-items row row-cols-2 row-cols-md-3 row-cols-lg-4">
+
             <div class="col ">
               <div class="d-flex flex-column justify-content-center align-items-center">
                 <img src="./img/price-list/tekstyl/divan 1500r 2 POSADOCHNYH MESTA.svg" alt="icon" class="img img-fluid mb-3">
-
                 <h5 class="h5 text-center">
                   Диван
                 </h5>
                 <p class="text-center mb-1">
-                  2&nbsp;посадочных (100-120&nbsp;см)
+                  2&nbsp;посадочных места
                 </p>
-                <p class="text-center fs-4">
-                  1000 рублей
+                <p class="text-center fs-5">
+                  1200 рублей
                 </p>
               </div>
             </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/DIVAN 1500 3 POSADOCHNIH MESTA.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Диван
+                </h5>
+                <p class="text-center mb-1">
+                  3&nbsp;посадочных места
+                </p>
+                <p class="text-center fs-5">
+                  1500 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/divan 2500r 3 POSADOCHNYH MESTA+ YGOL.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Диван
+                </h5>
+                <p class="text-center mb-1">
+                  3&nbsp;посадочных места + угол
+                </p>
+                <p class="text-center fs-5">
+                  2500 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/divan 2800r 4 POSADOCHNYH MESTA+ YGOL.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Диван
+                </h5>
+                <p class="text-center mb-1">
+                  4&nbsp;посадочных места + угол
+                </p>
+                <p class="text-center fs-5">
+                  2800 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/divan P OBRAZNYI 3500r.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Диван
+                </h5>
+                <p class="text-center mb-1">
+                  "П" образный
+                </p>
+                <p class="text-center fs-5">
+                  3500 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/1 MESTO POSADOCHNOE S ANTIVANDALNOI TKANY 600R.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  "Антивандальная" ткань
+                </h5>
+                <p class="text-center mb-1">
+                  1&nbsp;посадочное место
+                </p>
+                <p class="text-center fs-5">
+                  600 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/KRESLO 600R.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Кресло
+                </h5>
+                <p class="text-center fs-5">
+                  600 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/IZGOLOVE KROVATI 1500R.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Изголовье кровати
+                </h5>
+                <p class="text-center fs-5">
+                  1500 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/KYHONNIY YGOLOK 1300R.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Кухонный уголок
+                </h5>
+                <!-- <p class="text-center mb-1">
+                  "П" образный
+                </p> -->
+                <p class="text-center fs-5">
+                  1300 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/STYL BEZ MYGKOI SPINKI 200R.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Стул
+                </h5>
+                <p class="text-center mb-1">
+                  Без&nbsp;мягкой спинки
+                </p>
+                <p class="text-center fs-5">
+                  200 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/STYLS MYGKOI SPINKI 300R.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Стул
+                </h5>
+                <p class="text-center mb-1">
+                  С&nbsp;мягкой спинкой
+                </p>
+                <p class="text-center fs-5">
+                  300 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/SILNYE_ZAGRYAZNENIYA_20_DOPOM.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Сильные загрязнения
+                </h5>
+                <p class="text-center fs-5">
+                  20% доп.
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/tekstyl/VIVEDENIE ZAPOHOV OT 500R.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Выведение запахов
+                </h5>
+                <p class="text-center fs-5">
+                  от&nbsp;500 рублей
+                </p>
+              </div>
+            </div>
+
           </div>
   
           <div id="mattress" class="price-items row row-cols-2 row-cols-md-3 row-cols-lg-4 d-none">
+
             <div class="col ">
               <div class="d-flex flex-column justify-content-center align-items-center">
                 <img src="./img/price-list/mattress/matras detsky 60x120 1 storona 600r.svg" alt="icon" class="img img-fluid mb-3">
@@ -429,11 +666,57 @@
                 <p class="text-center mb-1">
                   60&times;120&nbsp;см (с&nbsp;одной стороны)
                 </p>
-                <p class="text-center fs-4">
+                <p class="text-center fs-5">
                   600 рублей
                 </p>
               </div>
             </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/mattress/matras odnospalny 90x190 1 storona 900r.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Матрас односпальный
+                </h5>
+                <p class="text-center mb-1">
+                  90&times;190&nbsp;см (с&nbsp;одной стороны)
+                </p>
+                <p class="text-center fs-5">
+                  900 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/mattress/matras polytorospalny 120x190 1 storona 1200r.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Матрас полутораспальный
+                </h5>
+                <p class="text-center mb-1">
+                  120&times;190&nbsp;см (с&nbsp;одной стороны)
+                </p>
+                <p class="text-center fs-5">
+                  1200 рублей
+                </p>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="./img/price-list/mattress/matras dvypalny 160x200 1 storona 1500r.svg" alt="icon" class="img img-fluid mb-3">
+                <h5 class="h5 text-center">
+                  Матрас двуспальный
+                </h5>
+                <p class="text-center mb-1">
+                  160&times;200&nbsp;см (с&nbsp;одной стороны)
+                </p>
+                <p class="text-center fs-5">
+                  1500 рублей
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -493,7 +776,7 @@
       <div class="row row-cols-1 row-cols-lg-3">
         <div class="col">
           <div class="footer__logo d-flex w-100 mb-3 mb-lg-0">
-            <img src="./img/logo-header.png" alt="Clean Comfort 03" class="img img-fluid" style="width: 250px;">
+            <img src="./img/logo-footer.png" alt="Clean Comfort 03" class="img img-fluid" style="width: 250px;">
           </div>
 
         </div>
@@ -508,7 +791,7 @@
                 <a href="#">Цены</a>
               </li>
               <li class="nav__item">
-                <a href="#">Контакты</a>
+                <a class="text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -582,12 +865,12 @@
 
       navItems.forEach((elem) => {
         if (elem.id == e.value) {
-          elem.classList.add('d-block')
+          elem.classList.add('d-flex')
           elem.classList.remove('d-none');
         } 
         else {
           elem.classList.add('d-none');
-          elem.classList.remove('d-block');
+          elem.classList.remove('d-flex');
         }
       })
 

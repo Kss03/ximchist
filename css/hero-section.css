@@ -15,13 +15,16 @@
 .hero-section .swiper-slide {
   position: relative;
 }
-.hero-section .swiper-slide img {
+.hero-section .swiper-slide .bg-image {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  object-fit: fill;
+  background-image: url(../img/try/desktop.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-section .swiper-slide .shadow {
@@ -31,7 +34,7 @@
   right: 0;
   bottom: 0;
   background: #000000;
-  opacity: .3;
+  opacity: .4;
 }
 
 .hero-section .swiper-slide h1 {
@@ -80,5 +83,17 @@
   .hero-section {
     max-width: 1600px;
     height: 400px;
+  }
+
+}
+@media (max-width: 575.98px) {
+
+  .hero-section .swiper-slide .bg-image {
+    background-image: url(../img/try/mobile.avif);
+    background-size: fill;
+  }
+
+  .hero-section .swiper-slide .shadow {
+    opacity: .3;
   }
 }

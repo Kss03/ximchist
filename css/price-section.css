@@ -1,5 +1,6 @@
 
 .price-section .price-items-block img{
   width: 150px;
-  height: auto;
+  height: 150px;
+  object-fit: contain;
 }
