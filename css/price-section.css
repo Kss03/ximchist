@@ -1,4 +1,15 @@
 
+@media (max-width: 575.98px) {
+  .price-section .price-nav button{
+    font-size: 18px;
+  }
+}
+@media (min-width: 575.98px) {
+  .price-section .price-nav button{
+    font-size: 22px;
+  }
+}
+
 .price-section .price-items-block img{
   width: 150px;
   height: 150px;

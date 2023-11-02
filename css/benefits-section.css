@@ -1,0 +1,23 @@
+.benefits-section {
+  background-color: #ebebeb;
+}
+
+.benefits-section .benefits{
+  max-width: 1200px;
+}
+.benefits-section .benefit img {
+  width: calc(var(--index) * 7);
+  height: calc(var(--index) * 7);
+  border-radius: 100%;
+}
+@media (max-width: 991.98px) {
+  .benefits-section .benefit img {
+    width: calc(var(--index) * 12);
+    height: calc(var(--index) * 12);
+  }
+}
+
+.benefits-section .benefit p {
+  text-align: center;
+  font-size: 20px;
+}
