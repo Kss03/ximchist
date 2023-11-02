@@ -29,7 +29,7 @@
     height: 60px;
   }
   
-  .header__nav a {
+  .header__nav a, .header__nav button {
     color: var(--text-dark);
     font-weight: var(--font-bold);
     font-size: 18px;
