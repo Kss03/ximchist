@@ -102,7 +102,7 @@
             <nav class="header__nav nav me-lg-5">
               <ul class="nav__list list-unstyled d-flex align-items-center mb-0">
                 <li class="nav__item me-lg-3 me-xl-4">
-                  <a class="lh-base" href="#material-examples">Примеры работ</a>
+                  <a class="lh-base" href="#examples-section">Примеры работ</a>
                 </li>
                 <li class="nav__item me-lg-3 me-xl-4">
                   <a class="lh-base" href="#service-price-section">Цены</a>
@@ -144,69 +144,74 @@
                   type="button" 
                   class="btn p-0" 
                   data-bs-toggle="offcanvas" 
-                  data-bs-target="#mobile-burger-menu" 
-                  aria-controls="mobile-burger-menu">
+                  data-bs-target="#mobileBurgerMenu" 
+                  aria-controls="mobileBurgerMenu">
                     <i class="fa-solid fa-bars fa-2xl"></i>
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-burger-menu" aria-labelledby="mobile-burger-menuLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="mobile-burger-menuLabel">
-                <span class="me-2 fs-6">
-                  <i class="fa-solid fa-location-dot me-1" style="color: inherit;"></i>
-                  г.Улан-Удэ
-                </span>
-              </h5>
-              <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close">
-                <i class="fa-solid fa-xmark fa-2xl"></i>
-              </button>
-            </div>
-            <div class="offcanvas-body">
-              <nav class="header__nav nav me-lg-5 w-100">
-                <ul class="nav__list list-unstyled d-flex align-items-start flex-column mb-0 fs-4 text-dark w-100">
-                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
-                    <a class="text-dark" href="#">Примеры работ</a>
-                  </li>
-                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
-                    <a class="text-dark" href="#service-price-section">Цены</a>
-                  </li>
+          <div class="offcanvas offcanvas-start" 
+            tabindex="-1" 
+            id="mobileBurgerMenu" 
+            aria-controls="mobileBurgerMenu"
+            data-bs-scroll="true" 
+            data-bs-backdrop="false">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileBurgerMenuLabel">
+                  <span class="me-2 fs-6">
+                    <i class="fa-solid fa-location-dot me-1" style="color: inherit;"></i>
+                    г.Улан-Удэ
+                  </span>
+                </h5>
+                <button type="button" class="btn p-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <i class="fa-solid fa-xmark fa-2xl"></i>
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <nav class="header__nav nav me-lg-5 w-100">
+                  <ul class="nav__list list-unstyled d-flex align-items-start flex-column mb-0 fs-4 text-dark w-100">
+                    <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                      <a class="text-dark nav-link p-0 fs-4" href="#examples-section" >Примеры работ</a>
+                    </li>
+                    <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                      <a class="text-dark nav-link p-0" href="#service-price-section">Цены</a>
+                    </li>
 
-                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
-                    <a href="tel:+79834380400" class="me-lg-2 me-xl-4 text-dark">
-                      <i class="fa-solid fa-phone" style="color: inherit;"></i>
-                      +7(983)438-04-00
-                    </a>
-                  </li>
-                  <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
-                    <a href="mailto:Cleancomfort03@yandex.ru" class="me-lg-2 me-xl-4 text-dark">
-                      <i class="fa-solid fa-envelope" style="color: inherit;"></i>
-                      Cleancomfort03@yandex.ru
-                    </a>
-                  </li>
-                  <li class="nav__item mb-3 pb-3 w-100 ps-4">
-                    <div class="text-end">
-                      <a target="_blank" href="https://instagram.com/cleancomfort03" class="h4 me-3 me-lg-2 me-xl-2 d-inline-block mb-0">
-                        <i class="fa-brands fa-instagram fa-xl" style="color: inherit;"></i>
+                    <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                      <a href="tel:+79834380400" class="me-lg-2 me-xl-4 text-dark">
+                        <i class="fa-solid fa-phone" style="color: inherit;"></i>
+                        +7(983)438-04-00
                       </a>
-                      <a target="_blank" href="https://t.me/+79834380400" class="h4 me-3 me-lg-2 me-xl-2 d-inline-block mb-0">
-                        <i class="fa-brands fa-telegram fa-xl" style="color: inherit;"></i>
+                    </li>
+                    <li class="nav__item mb-3 pb-3 w-100 border-bottom border-1 border-dark border-opacity-50 ps-4">
+                      <a href="mailto:Cleancomfort03@yandex.ru" class="me-lg-2 me-xl-4 text-dark">
+                        <i class="fa-solid fa-envelope" style="color: inherit;"></i>
+                        Cleancomfort03@yandex.ru
                       </a>
-                      <a target="_blank" href="https://viber.click/89834380400" class="h4 me-3 me-lg-2 me-xl-2 d-inline-block mb-0">
-                        <i class="fa-brands fa-viber fa-xl" style="color: inherit;"></i>
-                      </a>
-                      <a target="_blank" href="https://wa.me/qr/5Y6TS2M4BV52J1" class="h4 d-inline-block mb-0">
-                        <i class="fa-brands fa-whatsapp fa-xl" style="color: inherit;"></i>
-                      </a>
-                      
-                    </div>
-                  </li>
-                </ul>
-              </nav>
+                    </li>
+                    <li class="nav__item mb-3 pb-3 w-100 ps-4">
+                      <div class="text-end">
+                        <a target="_blank" href="https://instagram.com/cleancomfort03" class="h4 me-3 me-lg-2 me-xl-2 d-inline-block mb-0">
+                          <i class="fa-brands fa-instagram fa-xl" style="color: inherit;"></i>
+                        </a>
+                        <a target="_blank" href="https://t.me/+79834380400" class="h4 me-3 me-lg-2 me-xl-2 d-inline-block mb-0">
+                          <i class="fa-brands fa-telegram fa-xl" style="color: inherit;"></i>
+                        </a>
+                        <a target="_blank" href="https://viber.click/89834380400" class="h4 me-3 me-lg-2 me-xl-2 d-inline-block mb-0">
+                          <i class="fa-brands fa-viber fa-xl" style="color: inherit;"></i>
+                        </a>
+                        <a target="_blank" href="https://wa.me/qr/5Y6TS2M4BV52J1" class="h4 d-inline-block mb-0">
+                          <i class="fa-brands fa-whatsapp fa-xl" style="color: inherit;"></i>
+                        </a>
+                        
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
 
-            </div>
+              </div>
           </div>
 
         </div>
@@ -361,7 +366,7 @@
       </div>
     </div>
 
-    <div class="section examples-section">
+    <div class="section examples-section" id="examples-section">
       <div class="container">
         <h2 class="text-center mb-5 mb-lg-5 h1 fw-bold">
           Примеры нашей работы
@@ -1039,7 +1044,7 @@
           <nav class="footer__nav nav me-lg-5">
             <ul class="nav__list list-unstyled d-flex flex-column align-items-start mb-0">
               <li class="nav__item me-lg-3 me-xl-4">
-                <a class="text-white btn p-0 m-0 fs-5" href="#material-examples">Примеры работ</a>
+                <a class="text-white btn p-0 m-0 fs-5" href="#examples-section">Примеры работ</a>
               </li>
               <li class="nav__item me-lg-3 me-xl-4">
                 <a class="text-white btn p-0 m-0 fs-5" href="#service-price-section">Цены</a>
@@ -1154,6 +1159,18 @@
       })
 
     }
+
+  </script>
+
+  <script>
+
+    function offcanvasClose () {
+      const offcan = document.getElementById('mobileBurgerMenu');
+      const navLinks = offcan.querySelectorAll('.nav-link');
+      navLinks.forEach((item) => item.addEventListener('click', () => offcan.classList.remove('show')))
+    }
+
+    document.addEventListener('DOMContentLoaded', () => offcanvasClose())
 
   </script>
 
