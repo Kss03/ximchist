@@ -1,7 +1,7 @@
 .footer{
   padding-top: calc(var(--index) *3);
   padding-bottom: calc(var(--index) *3);
-  background-color: #2f3e53;
+  background-color: var(--footer-color);
 }
 
 .footer a {

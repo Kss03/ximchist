@@ -36,6 +36,8 @@
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/contact-modal-section.css">
   <link rel="stylesheet" href="./css/benefits-section.css">
+  <link rel="stylesheet" href="./css/examples-section.css">
+  <link rel="stylesheet" href="./css/swiper.css">
 
 
   <!-- Yandex.Metrika counter -->
@@ -356,6 +358,54 @@
         <p class="text-center fw-light fs-5">
           Компания &laquo;Clean Comfort&raquo; предлагает услуги химчистки мягкой мебели с&nbsp;выездом на&nbsp;дом в&nbsp;городе Улан-Удэ. Наши специалисты оперативно и&nbsp;качественно помогут вам избавиться от&nbsp;загрязнений на&nbsp;обивке мебели самого различного происхождения. Все работы проводятся прямо у&nbsp;заказчика с&nbsp;помощью профессионального оборудования Karcher, Santoemma и&nbsp;профессиональных моющих средств. Мы&nbsp;гарантируем высокое качество услуг по&nbsp;чистке диванов, кресел, пуфиков и&nbsp;другой мягкой мебели с&nbsp;любыми видами обивочных тканей.
         </p>
+      </div>
+    </div>
+
+    <div class="section examples-section">
+      <div class="container">
+        <h2 class="text-center mb-5 mb-lg-5 h1 fw-bold">
+          Примеры нашей работы
+        </h2>
+        <div class="row row-cols-2 example-subtitles">
+          <div class="col">
+            <div class="before-after-block d-flex justify-content-center">
+              <p class="fs-4 text-center before-after">До</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="before-after-block d-flex justify-content-center">
+              <p class="fs-4 text-center before-after">После</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper examples-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row row-cols-1 row-cols-md-2 g-3 ">
+                <div class="col">
+                  <img class="" src="./img/examples/exam-1-before.jpg" alt="before">
+                </div>
+                <div class="col">
+                  <img class="" src="./img/examples/exam-1-after.jpg" alt="after">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row row-cols-1 row-cols-md-2 g-3 ">
+                <div class="col">
+                  <img class="" src="./img/examples/exam-1-before.jpg" alt="before">
+                </div>
+                <div class="col">
+                  <img class="" src="./img/examples/exam-1-after.jpg" alt="after">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
 
@@ -1042,15 +1092,37 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
   <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".hero-swiper", {
+  <!-- <script>
+    var heroSwiper = new Swiper(".hero-swiper", {
       loop: true,
       height: 450,
       autoplay: {
         delay: 5000,
       },
       speed: 1000,
+    });
+  </script> -->
+
+  <!-- examples slider -->
+  <script>
+    var examplesSwiper = new Swiper(".examples-slider", {
+      spaceBetween: 20,
+      loop: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+
     });
   </script>
 
@@ -1084,5 +1156,6 @@
     }
 
   </script>
+
 </body>
 </html>
