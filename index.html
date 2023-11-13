@@ -477,7 +477,7 @@
             <li class="nav-item">
               <button 
                 value="sofa" 
-                class="nav-link text-dark active px-lg-5 me-md-3" 
+                class="nav-link text-dark active px-lg-5 me-md-3 me-1" 
                 onclick="showCurrent(this)">
                   Мягкая мебель
                 </button>
@@ -485,7 +485,7 @@
             <li class="nav-item">
               <button 
                 value="mattress" 
-                class="nav-link text-dark px-lg-5 me-md-3" 
+                class="nav-link text-dark px-lg-5 me-md-3 me-1" 
                 onclick="showCurrent(this)">
                   Матрасы
                 </button>
@@ -970,8 +970,15 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-lg-3">
         <div class="col">
-          <div class="footer__logo d-flex mb-3 mb-lg-0">
-            <img src="./img/logo-footer.png" alt="CleanComfort03" class="img img-fluid" style="width: 250px;">
+          <div class="footer__logo d-inline-block mb-3 mb-lg-0">
+            <img src="./img/logo-footer.png" 
+              alt="CleanComfort" 
+              class="" 
+              style="
+                width: 250px; 
+                height: auto;
+                object-fit: contain;  
+              ">
           </div>
 
         </div>
