@@ -1,0 +1,14 @@
+
+.contact-modal-section .modal-header {
+  background-color: var(--turquose-400);
+  color: var(--font-white);
+}
+.contact-modal-section .modal-footer {
+  background-color: var(--turquose-400);
+  color: var(--font-white);
+  margin:0;
+}
+.contact-modal-section .modal-title {
+  font-size: 32px;
+  text-align: center;
+}

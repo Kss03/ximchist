@@ -1,0 +1,52 @@
+
+
+/* desktopp or mobile */
+
+@media (min-width: 991.98px) {
+  .header__mobile {
+    display: none;
+  }
+
+  .header .header__top {
+    background-color: var(--turquose-400);
+  }
+  
+  .header__top, .header__top a {
+    color: var(--font-white);
+    transition: opacity .2s ease-in-out;
+  }
+  
+  .header__top a:hover {
+    opacity: .7;
+  }
+  
+  .header__main {
+    background-color: #fff;
+    font-size: 18px;
+  }
+  
+  .header__logo {
+    height: 60px;
+  }
+  
+  .header__nav a, .header__nav button {
+    color: var(--text-dark);
+    font-weight: var(--font-bold);
+    font-size: 18px;
+    transition: opacity .2s ease-in-out;
+  }
+  .header__nav a:hover {
+    opacity: .7;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__desktop {
+    display: none;
+  }
+
+
+}
+
+
+

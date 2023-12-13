@@ -1,0 +1,24 @@
+.advantages-section .benefits{
+  max-width: 1200px;
+}
+.advantages-section .benefit img {
+  width: calc(var(--index) * 3);
+  height: calc(var(--index) * 3);
+}
+@media (max-width: 991.98px) {
+  .advantages-section .benefit img {
+    width: calc(var(--index) * 5);
+    height: calc(var(--index) * 5);
+  }
+}
+@media (max-width: 575.98px) {
+  .advantages-section .benefit img {
+    width: calc(var(--index) * 6);
+    height: calc(var(--index) * 6);
+  }
+}
+
+.advantages-section .benefit p {
+  text-align: center;
+  font-size: 20px;
+}
