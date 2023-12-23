@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  line-height: 1.75;
+}
+
+body {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif; 
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+
+  --index: calc(1vh + 1vw);
+
+  /* colors */
+
+  --turquose-50: #E1F1F1;
+  --turquose-100: #C7E3E3;
+  --turquose-200: #90C2C2;
+  --turquose-400: #5C9999;
+  --turquose-600: #3A8282;
+  --turquose-700: #206B6B;
+
+  --orange-100: #FFB095;
+  --orange-200: #FF906A;
+  --orange-400: #FF7647;
+  --orange-600: #F0511A;
+  --orange-700: #BB3709;
+
+  --green-100: #80DCB0;
+  --green-200: #52C58E;
+  --green-400: #31B274;
+  --green-600: #12A75F;
+  --green-700: #31B274;
+
+  --sky-50: #eff6ff;
+  --sky-100: #e0f2fe;
+  --sky-200: #bae6fd;
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --sky-800: #0369a1;
+  --sky-900: #0c4a6e;
+  --sky-950: #082f49;
+  
+  
+  --red-50: #fef2f2;
+  --red-100: #fee2e2;
+  --red-200: #fecaca;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+  --red-950: #450a0a;
+  
+  --lime-50: #f7fee7;
+  --lime-100: #ecfccb;
+  --lime-200: #d9f99d;
+  --lime-300: #bef264;
+  --lime-400: #a3e635;
+  --lime-500: #84cc16;
+  --lime-600: #65a30d;
+  --lime-700: #4d7c0f;
+  --lime-800: #3f6212;
+  --lime-900: #365314;
+  --lime-950: #1a2e05;
+  
+  --yellow-50: #fefce8;
+  --yellow-100: #fef9c3;
+  --yellow-200: #fef08a;
+  --yellow-300: #fde047;
+  --yellow-400: #facc15;
+  --yellow-500: #eab308;
+  --yellow-600: #ca8a04;
+  --yellow-700: #a16207;
+  --yellow-800: #854d0e;
+  --yellow-900: #713f12;
+  --yellow-950: #422006;
+  
+  --icon-grey: #9a9fa8;
+  
+  /* text  */
+  --font-white: #fff;
+  --font-dark: #1c1e21;
+  --font-grey: #585858;
+  
+  --fw-bold: 700;
+  --fw-normal: 400;
+
+  --fs-text: 16px;
+
+  --bg-grey: #ebebeb;
+
+  --footer-color:#2f3e53;
+
+
+}
+
+
+.section {
+  width: 100%;
+  max-width: 100%;
+  padding-top: calc(var(--index) * 4);
+  padding-bottom: calc(var(--index) * 4);
+  border-top: #e6e6e6 1px solid;
+}

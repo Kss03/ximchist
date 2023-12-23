@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import './variables.scss';
+@import './App.scss';
+
+@import './components/Sidebar/Sidebar.scss';
+@import './components/Header/Header.scss';
+@import './pages/HomePage/HomePage.scss';
+@import './pages/ExamplesPage/ExamplesPage.scss';
+@import './pages/AddExamples/AddExamples.scss';
+@import './pages/AuthorizationPage/AuthorizationPage.scss';
