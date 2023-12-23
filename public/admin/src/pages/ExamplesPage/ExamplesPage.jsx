@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import MediaQuery from 'react-responsive'
 
-import { getImageTable } from '../../services/DBRoutes'
+import { getImageTable } from '../../services/dbRoutes'
 
 import TableRow from '../../components/ExampleSection/TableRow'
 import DeleteModal from '../../components/ExampleSection/DeleteModal'
