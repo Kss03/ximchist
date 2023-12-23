@@ -22,6 +22,7 @@ app.use(errorHandler)
 
 app.use('/static', express.static(__dirname + '/static'));
 app.use(express.static(__dirname + '/public/client'));
+app.use('/admin', express.static(__dirname + '/public/admin/dist'))
 app.use(errorHandler)
 
 

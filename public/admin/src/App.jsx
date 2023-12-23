@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { useContext, useState, useEffect, createContext } from 'react'
 
 import MediaQuery from 'react-responsive'
@@ -33,7 +33,7 @@ function App() {
   return (
     <Context.Provider value={{userCont: [user, setUser], isAuthCont: [isAuth, setIsAuth]}}>
 
-      <BrowserRouter >
+      <HashRouter >
         <div className=" bg-delicate g-0 row min-vh-100">
           {isAuth && <NavBars />}
           <MediaQuery minWidth={991.98} >
@@ -43,7 +43,7 @@ function App() {
             <AppRouter/>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </Context.Provider>
   )
 }
