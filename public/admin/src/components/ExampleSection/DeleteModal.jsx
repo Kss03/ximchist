@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 
-import { deleteExamples } from '../../services/DBRoutes';
+import { deleteExamples } from '../../services/dbRoutes';
 
 const DeleteModal = ({ modalShow, setModalShow, items, setItems, setImgData, setLoading}) => {
 
