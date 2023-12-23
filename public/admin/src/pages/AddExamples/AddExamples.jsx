@@ -1,7 +1,9 @@
 
 import { useEffect, useRef, useState } from "react"
-import { uploadImages } from "../../../services/DBRoutes"
+import { uploadImages } from "../../services/DBRoutes"
 import { v4 } from "uuid"
+import MediaQuery from "react-responsive" 
+import { Accordion } from "react-bootstrap"
 
 const AddExamples = () => {
 
@@ -55,14 +57,14 @@ const AddExamples = () => {
         const uploadButton = document.getElementById('uploadButton');
         uploadButton.insertAdjacentHTML('afterbegin', 
           `
-            <div class="alert alert-success mb-0 mt-2" role="alert">${index + 1} ) uploaded, status: ${status}</div>
+            <div class="alert alert-success mb-0 mt-2 py-1 py-lg-2" role="alert">${index + 1} ) uploaded, status: ${status}</div>
           `)
       })
       .catch(({index, status}) => {
         const uploadButton = document.getElementById('uploadButton');
         uploadButton.insertAdjacentHTML('afterbegin',
         `
-          <div class="alert alert-danger mb-0 mt-2" role="alert">${index + 1} ) error, status: ${status}</div>
+          <div class="alert alert-danger mb-0 mt-2 py-1 py-lg-2" role="alert">${index + 1} ) error, status: ${status}</div>
         `)
       })
     })
@@ -78,17 +80,29 @@ const AddExamples = () => {
   return (
     <div className="add-examples">
       <div className="container-fluid">
-        <h2 className="text-dark ps-5 pt-4 mb-3">Add new examples</h2>
-        <div className="row">
-          <div className="col col-9">
+        <MediaQuery minWidth={991.98}> 
+          <h2 className="text-dark ps-5 pt-4 mb-3">Add new examples</h2>
+        </MediaQuery>
+        <div className="row flex-lg-row-reverse">
+
+          <div className="col-12 col-lg-3">
+            <div className="rounded-3 bg-white px-3 py-2 mb-3 mb-lg-0 py-lg-3 pb-lg-4">
+              <div className="d-flex justify-content-around align-items-center" >
+                <button className="btn btn-dark " onClick={() => upload()}>Upload to server</button>
+                <button className="btn btn-outline-dark " onClick={() => clear()}>Clear all</button>
+              </div>
+              <div className="d-flex justify-content-start align-items-center flex-column" id="uploadButton"></div>
+            </div>
+          </div>
+
+          <div className="col-12 col-lg-9">
             <div className="rounded-3 bg-white px-3 py-3">
               <div className="row">
                 <div className="col-12 ">
                   <div className="add-form">
                     <form className="form" action="addToList" onSubmit={(e) => onAdd(e)}>
-                      <div className="row mb-2">
-                        <div className="col-5">
-                          {/* <label htmlFor="image">Before Img</label> */}
+                      <div className="row mb-2 gy-3 gy-lg-0 justify-content-end">
+                        <div className="col-12 col-lg-5">
                           <input type="file" 
                             name="beforeImg"
                             id="image"
@@ -97,8 +111,7 @@ const AddExamples = () => {
                             className="form-control"
                             required/>
                         </div>
-                        <div className="col-5">
-                          {/* <label htmlFor="image">After Img</label> */}
+                        <div className="col-12 col-lg-5">
                           <input type="file" 
                             name="afterImg"
                             id="image"
@@ -107,7 +120,7 @@ const AddExamples = () => {
                             className="form-control"
                             required/>
                         </div>
-                        <div className="col-2">
+                        <div className="col-lg-2 col-4">
                           <div className="d-flex align-items-end h-100">
                             <button type="submit" className="btn btn-regular w-100" >Add</button>
                           </div>
@@ -123,15 +136,7 @@ const AddExamples = () => {
               {cardItems}
             </div>
           </div>
-          <div className="col col-3">
-            <div className="rounded-3 bg-white px-3 py-3 pb-4">
-              <div className="d-flex justify-content-around align-items-center" >
-                <button className="btn btn-dark " onClick={() => upload()}>Upload to server</button>
-                <button className="btn btn-outline-dark " onClick={() => clear()}>Clear all</button>
-              </div>
-              <div className="d-flex justify-content-start align-items-center flex-column" id="uploadButton"></div>
-            </div>
-          </div>
+
           {/* <div className="col-9">
 
           </div> */}

@@ -1,41 +1,50 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+import { useContext, useState, useEffect, createContext } from 'react'
 
-import { useState } from 'react'
+import MediaQuery from 'react-responsive'
 
-import Header from './components/Header/Header'
-import Sidebar from './components/Sidebar/Sidebar'
-import HomePage from './pages/HomePage/HomePage'
-import ExamplesPage from './pages/ExamplesPage/ExamplesPage'
-import AddExamples from './pages/ExamplesPage/AddExamples/AddExamples'
+import NavBars from './components/NavBar/NavBar'
+import AppRouter from './components/AppRouter/AppRouter'
+import { check } from './services/authRoutes'
+
+export const Context = createContext(null)
 
 function App() {
 
-  return (
-    <BrowserRouter >
-      <div className='position-fixed vw-100 z-3'>
-          <Header/>
-      </div>
-      <div className='position-fixed vw-100 vh-100 pt-5'>
-        <div className='position-absolute w-100 h-100 row g-0'>
-          <div className='col-3 col-xl-2 h-100'><Sidebar /></div>
-        </div>
-      </div>
-      <div className=" bg-delicate g-0 row pt-5 min-vh-100">
-        <div className='col-3 col-xl-2'></div>
-        <div className='col-9 col-xl-10 z-1 mb-3'>
-          <Routes>
-            <Route path='/'>
-              <Route index element={<HomePage/>}></Route>
-              <Route path='examples' >
-                <Route index element={<ExamplesPage/>}></Route>
-                <Route path='addNew' element={<AddExamples />}></Route>
-              </Route>
+  const [user, setUser] = useState({})
+  const [isAuth, setIsAuth] = useState(false)
+  const [loading, setLoading] = useState(true)
 
-            </Route>
-          </Routes>
-        </div>
+  useEffect(() => {
+    check().then(data => {
+      setUser(data)
+      setIsAuth(true)
+    }).finally(() => setLoading(false))
+  }, [])
+
+  if (loading) {
+    return (
+      <div>
+        <h1>Loaging...</h1>
       </div>
-    </BrowserRouter>
+    )
+  }
+
+  return (
+    <Context.Provider value={{userCont: [user, setUser], isAuthCont: [isAuth, setIsAuth]}}>
+
+      <BrowserRouter >
+        <div className=" bg-delicate g-0 row min-vh-100">
+          {isAuth && <NavBars />}
+          <MediaQuery minWidth={991.98} >
+            <div className='col-lg-3 col-xl-2'></div>
+          </MediaQuery>
+          <div className=' col-12 col-lg-9 col-xl-10 z-1 mb-3 mt-3 mt-lg-0 pt-5'>
+            <AppRouter/>
+          </div>
+        </div>
+      </BrowserRouter>
+    </Context.Provider>
   )
 }
 

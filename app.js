@@ -17,6 +17,8 @@ app.use(cors());
 app.use(express.json());
 app.use(fileUpload())
 app.use('/api/v1', router)
+// if any errors
+app.use(errorHandler)
 
 app.use('/static', express.static(__dirname + '/static'));
 app.use(express.static(__dirname + '/public/client'));

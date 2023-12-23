@@ -16,14 +16,6 @@ class workExamplesController {
       next(ApiError.badRequest(e.message))
     }
   }
-  // async getAll (req, res, next) {
-  //   try {
-  //     const data = await WorkExamples.findAll()
-  //     res.status(200).json(data)
-  //   } catch (e) {
-  //     next(ApiError.badRequest(e.message))
-  //   }
-  // }
 
   async getFile (req, res, next) {
     const params = req.params
@@ -32,6 +24,7 @@ class workExamplesController {
 
   async postImages (req, res, next) {
     try {
+
       const {imgBefore, imgAfter} = req.files
       // get the file format
       const extBefore = path.extname(imgBefore.name)
@@ -62,7 +55,7 @@ class workExamplesController {
       imgAfter.mv(path.resolve(staticPath, afterName))
       
       //create new row with file names in database
-      const examplesRow = await WorkExamples.create({
+      const examplesRow   = await WorkExamples.create({
         before_img: beforeName,
         after_img: afterName
       })
@@ -109,11 +102,6 @@ class workExamplesController {
       next(ApiError.badRequest(e.message))
     }
   }
-
-  // async deleteMany (req, res, next) {
-
-  //   const items = req.body
-  // }
 
 }
 
